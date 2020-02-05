@@ -1,0 +1,117 @@
+  @keyframes top-left {
+  0% {left: 0%; top: 0%;}
+  25% {left: 6.25%; top: 6.25%;}
+  50% {left: 12.5%; top: 12.5%;}
+  75% {left: 18.75%; top: 18.75%;}
+  100% {left: 25%; top: 25%;}
+  /* increments of 90 degrees */
+  0% {transform: rotate(45deg);}
+  25% {transform: rotate(135deg);}
+  50% {transform: rotate(225deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(315deg);}
+  }
+  @keyframes top-right {
+  0% {right: 25%; top: 0%;}
+  25% {right: 31.25%; top: 6.25%;}
+  50% {right: 37.5%; top: 12.5%;}
+  75% {right: 43.75%; top: 18.75%;}
+  100% {right: 50%; top: 25%;}
+   /* decrements of 90 degrees */
+  0% {transform: rotate(-45deg);}
+  25% {transform: rotate(-135deg);}
+  50% {transform: rotate(-225deg);}
+  75% {transform: rotate(-270deg);}
+  100% {transform: rotate(-315deg);}
+  }
+  @keyframes bottom-left {
+  0% {left: 0%; bottom: 25%;}
+  25% {left: 6.25%; bottom: 31.25%;}
+  50% {left: 12.5%; bottom: 37.5%;}
+  75% {left: 18.75%; bottom: 43.75%;}
+  100% {left: 25%; bottom: 50%;}
+     /* decrements of 90 degrees */
+  0% {transform: rotate(-45deg);}
+  25% {transform: rotate(-135deg);}
+  50% {transform: rotate(-225deg);}
+  75% {transform: rotate(-270deg);}
+  100% {transform: rotate(-315deg);}
+  }
+@keyframes bottom-right {
+  0% {right: 25%; bottom: 25%;}
+  25% {right: 31.25%; bottom: 31.25%;}
+  50% {right: 37.5%; bottom: 37.5%;}
+  75% {right: 43.75%; bottom: 43.75%;}
+  100% {right: 50%; bottom: 50%;}
+   /* increments of 90 degrees */
+  0% {transform: rotate(45deg);}
+  25% {transform: rotate(135deg);}
+  50% {transform: rotate(225deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(315deg);}
+  }
+  /*maybe for some other time */
+  /*@keyframes center {
+    0% {width: 0%; height: 0%;}
+    25% {width: 25%; height: 25%;}
+    50% {width: 50%; height: 50%;}
+    75% {width: 75%; height: 75%;}
+    100% {width: 100%; height: 100%;}
+  } */
+#container{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 10%;
+}
+div .defaultInfo {
+  background-color: red;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    width: 5%; /* default 5% */
+    height: 10%; /* default 10% */
+    border-radius: 5px;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+  #top-left {
+    animation-name: top-left;
+    transform: rotate(-45deg); /*NOT AN ANIMATION! DEFAULT POSITION! */
+  }
+  #top-right {
+    animation-name: top-right;
+    right: 25%;
+    transform: rotate(45deg); /*NOT AN ANIMATION! DEFAULT POSITION! */
+  }
+  #bottom-left {
+    animation-name: bottom-left;
+    bottom: 25%;
+    transform: rotate(45deg); /*NOT AN ANIMATION! DEFAULT POSITION! */
+  }
+  #bottom-right {
+    animation-name: bottom-right;
+    bottom: 25%;
+    right: 25%;
+    transform: rotate(-45deg); /*NOT AN ANIMATION! DEFAULT POSITION! */
+  }
+  /*maybe for some other time*/
+  /*
+  div .center {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    animation-name: center;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    width: 25%;
+    height: 20%;
+    top: 25%;
+    bottom: 25%;
+    left: 25%;
+    right: 25%;
+    border-radius: 50%;
+  }
+*/
